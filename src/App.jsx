@@ -5,6 +5,8 @@ import Hero from './components/Hero'
 
 import { ProductItem } from './components/ProductItem'
 
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+
 function App() {
  
 
@@ -15,7 +17,7 @@ function App() {
    
       <main className='bg-virtus  text white'>
 
-      
+      <FloatingWhatsApp/>
       <Hero />
       <ProductItem />
 
