@@ -1,28 +1,23 @@
 
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Hero from './components/Hero'
+import { Routes, Route } from "react-router-dom"
+import { Landing } from "./components/Landing"
+import { Gamer } from "./pages/Gamer"
 
-import { ProductItem } from './components/ProductItem'
-
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 function App() {
  
 
   return (
     <>
+   <Routes>
+      <Route path="/" element={<Landing/>} />
+      <Route path="*" element={<h1>Not Found</h1>} />
+        <Route path="/Gamer" element={<Gamer/>} />
 
-    <Header />  
-   
-      <main className='bg-virtus  text white'>
+      
+      </Routes>
 
-      <FloatingWhatsApp/>
-      <Hero />
-      <ProductItem />
-
-      </main>
-    <Footer />  
+  
 
         
     </>

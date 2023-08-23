@@ -10,9 +10,6 @@ const Hero = () => {
       boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)"
     }}
     >
-      <div className="container mx-auto text-white text-center">
-     
-      </div>
     </div>
   );
 };
